@@ -12,15 +12,17 @@ Features
 - Button to generate a new cocktail
 - Built with Express, Axios, and EJS
 
-Folder Structure
-----------------
-project-folder/
+### Folder Structure
+
+cocktail-app/
 ├── public/
 │ └── styles.css
 ├── views/
 │ └── index.ejs
+├── .gitignore
 ├── index.js
 ├── package.json
+├── package-lock.json
 └── README.md
 
 Getting Started
