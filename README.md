@@ -5,7 +5,7 @@ CocktailDB API and displays its name, ingredients, instructions, and image. User
 click a button to generate a new random cocktail recipe each time.
 
 
-Features
+### Features
 
 --------
 - Welcome screen before any cocktail is shown
@@ -16,23 +16,24 @@ Features
 - Built with Express, Axios, and EJS
 
 ### Folder Structure
-
-cocktail-app/
+Folder Structure
+----------------
+```
+project-folder/
 ├── public/
-│ └── styles.css
+│   └── styles.css
 ├── views/
-│ └── index.ejs
-├── .gitignore
+│   └── index.ejs
 ├── index.js
 ├── package.json
-├── package-lock.json
 └── README.md
+```
 
 Getting Started
 ---------------
 1. Clone the Repository
- git clone https://github.com/your-username/cocktail-app.git
- cd cocktail-app
+ git clone https://github.com/your-username/Cocktail-App.git
+ cd Cocktail-App
 2. Install Dependencies
  npm install
 3. Start the Server
