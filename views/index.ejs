@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= drink ? drink.strDrink + ' - Cocktail App' : 'Welcome - Cocktail App' %></title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <% if (!drink) { %>
+    <h1>Welcome to the Cocktail Club 🍸</h1>
+    <p>Click below to discover a random cocktail recipe!</p>
+    <form method="GET" action="/">
+      <input type="hidden" name="fetch" value="true" />
+      <button type="submit">Get Random Cocktail</button>
+    </form>
+  <% } else { %>
+    <h1><%= drink.strDrink %></h1>
+
+    <img src="<%= drink.strDrinkThumb %>" alt="<%= drink.strDrink %>" />
+
+    <h2>Ingredients</h2>
+    <ul>
+      <% (Array.isArray(ingredients) ? ingredients : []).forEach(function(item) { %>
+        <li><%= item.measure %> <%= item.ingredient %></li>
+      <% }) %>
+    </ul>
+
+    <h2>Instructions</h2>
+    <p><%= drink.strInstructions || 'No instructions available.' %></p>
+
+    <form method="GET" action="/">
+      <input type="hidden" name="fetch" value="true" />
+      <button type="submit">Get Another Random Cocktail</button>
+    </form>
+  <% } %>
+
+</body>
+</html>
