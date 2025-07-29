@@ -3,7 +3,10 @@ CocktailDB Random Drink App
 This is a fun Node.js + Express web application that fetches a random cocktail using the
 CocktailDB API and displays its name, ingredients, instructions, and image. Users can
 click a button to generate a new random cocktail recipe each time.
+
+
 Features
+
 --------
 - Welcome screen before any cocktail is shown
 - Fetches random cocktail from CocktailDB API
