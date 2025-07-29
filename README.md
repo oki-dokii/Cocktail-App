@@ -32,7 +32,7 @@ project-folder/
 Getting Started
 ---------------
 1. Clone the Repository
- git clone https://github.com/your-username/Cocktail-App.git
+ git clone https://github.com/oki-dokii/Cocktail-App.git
  cd Cocktail-App
 2. Install Dependencies
  npm install
